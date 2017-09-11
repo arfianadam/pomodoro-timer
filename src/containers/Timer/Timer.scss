@@ -1,3 +1,31 @@
+@import '~theme/custom.scss';
+
 .Timer {
-  /* Your stylesheet here */
+  padding: $space*4 0;
+
+  .countdown {
+    display: flex;
+    width: 100%;
+    padding: $space*4 0;
+    font-size: 5em;
+    justify-content: center;
+
+    .divider {
+      margin: 0 $space*2;
+    }
+
+    .minute, .second {
+      border: none;
+      display: block;
+      width: 30%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .minute {
+      text-align: right;
+    }
+  }
 }
